@@ -12,4 +12,4 @@ int main(){
             cout<<arr[i]<<endl;
         }
     }
-}
+} 
