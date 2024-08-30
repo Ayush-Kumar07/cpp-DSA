@@ -78,28 +78,95 @@
 //     cout<<min<<endl;
 
 // }
-#include<iostream>
-using namespace std ;
-int main(){
-    int  n;
-    cin>>n;
-   int arr[n];
-   int sum = 0;
-   int mul = 1;
-   for (int i=0 ; i<n ; i++){
-    cin>>arr[i];
-   }
-   for(int i=0 ; i<n ; i++){
-    if(arr[i]%2==0){
-        sum = sum+arr[i];
-    }
-   }
-   for(int i=0 ; i<n ; i++){
-    if(arr[i]%2!=0){
-        mul=mul*arr[i];
-    }
-   }
-   cout<<"the value is :"<<sum<<endl;
-   cout<<"the value is :"<<mul<<endl;
+// #include<iostream>
+// using namespace std ;
+// int main(){
+//     int  n;
+//     cin>>n;
+//    int arr[n];
+//    int sum = 0;
+//    int mul = 1;
+//    for (int i=0 ; i<n ; i++){
+//     cin>>arr[i];
+//    }
+//    for(int i=0 ; i<n ; i++){
+//     if(arr[i]%2==0){
+//         sum = sum+arr[i];
+//     }
+//    }
+//    for(int i=0 ; i<n ; i++){
+//     if(arr[i]%2!=0){
+//         mul=mul*arr[i];
+//     }
+//    }
+//    cout<<"the value is :"<<sum<<endl;
+//    cout<<"the value is :"<<mul<<endl;
 
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #include<iostream>
+// using namespace std ;
+// int main(){
+//     int n ;
+//     cin>>n;
+//     int arr[n];
+//     int sum = 0 ;
+//     int mul = 1 ;
+//     for(int i = 0 ; i<n ; i++){
+//         cin>>arr[i]  ;
+//     }
+//      for ( int i = 0 ; i< n ; i++){
+//         if (arr[i]%2==0){
+//             sum = sum + arr[i];
+//         }
+//         for ( int i = 0 ; i<n ; i++){
+//             if(arr[i]%2!= 0){
+//                 mul = mul * arr[i] ;
+//             }
+//         }
+//      } 
+//      cout<<"The sum is :"<<sum<<endl;
+//        cout<<"The mul is :"<<mul<<endl;
+// }
+#include<iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin >> n;
+    int arr[n];
+    int sum = 0;
+    int mul = 1;
+
+    // Input array elements
+    for(int i = 0; i < n; i++){
+        cin >> arr[i];
+    }
+
+    // Process array elements
+    for(int i = 0; i < n; i++){
+        if(arr[i] % 2 == 0){
+            sum += arr[i];  // Sum of even numbers
+        } else {
+            mul *= arr[i];  // Product of odd numbers
+        }
+    }
+
+    cout << "The sum of even numbers is: " << sum << endl;
+    cout << "The product of odd numbers is: " << mul << endl;
+
+    return 0;
 }
