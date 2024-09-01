@@ -8,8 +8,10 @@ int main()
     cout<<"Enter the value of b: "<<endl;
     cin>>b ;
     char operation ;
-    cout<<"Enter the opration you want to perform: "<<endl;
+    cout<<"Enter the opretion you want to perform: "<<endl;
     cin>>operation ;
+    cout<<"your answer is: ";
+
 
     switch(operation){
 
