@@ -36,5 +36,5 @@ int main(){
     node* root = NULL;
     root = buildTree(root);
 
-    return ;
+    return 0 ;
 }
